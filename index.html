@@ -1,67 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Templa Medical - Tu Oasis Estético</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Quicksand', sans-serif; }
-        .mobile-first-container { max-width: 480px; margin: 0 auto; background: #fff; min-height: 100vh; position: relative; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Templa Medical - Tu Oasis Estético</title>
+  <meta name="description" content="Templa Medical propone una experiencia estética en Madrid centrada en equilibrio, piel y resultados reales." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="bg-stone-50">
-    <div class="mobile-first-container shadow-2xl">
-        <!-- Minimal Logo -->
-        <header class="p-8 text-center">
-            <h1 class="text-3xl font-light tracking-[0.4em] uppercase text-stone-800">Templa</h1>
-            <div class="h-0.5 w-12 bg-stone-300 mx-auto mt-2"></div>
-        </header>
-
-        <!-- Fast Experience (Business-First) -->
-        <section class="p-6">
-            <div class="bg-white rounded-[3rem] p-10 shadow-sm border border-stone-100 text-center mb-8">
-                <h2 class="text-2xl font-bold text-stone-800 mb-4 leading-relaxed">Redescubre el equilibrio en tu piel.</h2>
-                <p class="text-sm text-stone-500 mb-8 leading-relaxed">Tratamientos diseñados para resultados visibles desde la primera sesión.</p>
-                <button class="bg-stone-800 text-stone-50 px-8 py-4 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg active:scale-95 transition-transform">
-                    Explorar Tratamientos
-                </button>
-            </div>
-
-            <!-- Portfolio Concept (Business-First: Interactive/Visual) -->
-            <div class="mb-8">
-                <h3 class="text-[10px] font-bold text-stone-400 uppercase tracking-[0.3em] mb-4">Resultados Reales</h3>
-                <div class="relative group overflow-hidden rounded-[2rem] shadow-md">
-                    <img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&q=80&w=800" class="w-full h-64 object-cover">
-                    <div class="absolute inset-0 bg-stone-900/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                        <span class="text-white font-bold text-sm underline underline-offset-8">Ver Galería</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Focus Treatments -->
-            <div class="space-y-4">
-                <div class="flex justify-between items-center p-6 bg-white rounded-3xl border border-stone-50 shadow-sm">
-                    <span class="font-bold text-stone-700">Rejuvenecimiento Facial</span>
-                    <span class="text-xl"><span>[Icono Estética]</span></span>
-                </div>
-                <div class="flex justify-between items-center p-6 bg-white rounded-3xl border border-stone-50 shadow-sm">
-                    <span class="font-bold text-stone-700">Contorno Corporal</span>
-                    <span class="text-xl">🌀</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Dynamic Contact (Mobile-First) -->
-        <footer class="p-8 bg-stone-100 text-center mt-12 rounded-t-[3rem]">
-            <p class="text-xs text-stone-400 mb-6 uppercase tracking-widest">Contáctanos</p>
-            <div class="flex justify-center gap-6">
-                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">Tel:</div>
-                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">✉️</div>
-                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">📍</div>
-            </div>
-        </footer>
-    </div>
+<body>
+  <header class="site-header">
+    <a href="#inicio" class="brand">Templa<span>Tu oasis estético</span></a>
+    <nav class="site-nav" aria-label="Principal">
+      <a href="#ritmo">Ritmos</a>
+      <a href="#resultados">Resultados reales</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+  <main>
+    <section id="inicio" class="hero-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Bienestar estético · Madrid</p>
+        <h1>Redescubre el equilibrio en tu piel.</h1>
+        <p class="intro">Templa Medical se mueve entre estética y calma: tratamientos para devolver balance, confort y mejor aspecto a la piel sin convertir la visita en una experiencia agresiva o acelerada.</p>
+        <div class="hero-actions">
+          <a href="#contacto" class="button button-solid">Pedir valoración</a>
+          <a href="#ritmo" class="button button-outline">Ver recorridos</a>
+        </div>
+      </div>
+      <div class="hero-ribbon">
+        <span>Templa Ritual</span>
+        <strong>Calma, reparación y luz</strong>
+      </div>
+    </section>
+    <section id="ritmo" class="ritmo-shell">
+      <div class="section-header">
+        <p class="eyebrow">Recorridos de tratamiento</p>
+        <h2>Sesiones que priorizan confort cutáneo, recuperación y mejora visible.</h2>
+      </div>
+      <div class="ritmo-grid">
+        <article><h3>Equilibrio facial</h3><p>Protocolos para piel sensible, textura irregular y pérdida de confort.</p></article>
+        <article><h3>Hidratación profunda</h3><p>Tratamientos orientados a restaurar frescura y elasticidad de forma progresiva.</p></article>
+        <article><h3>Mantenimiento suave</h3><p>Sesiones periódicas para sostener resultados reales con poca fricción.</p></article>
+      </div>
+    </section>
+    <section id="resultados" class="results-shell">
+      <div class="section-header section-header-light">
+        <p class="eyebrow">Resultados reales</p>
+        <h2>La mejora importa cuando se nota en la piel y en la sensación posterior.</h2>
+      </div>
+      <div class="results-grid">
+        <article><span>01</span><p>Planes pensados para respetar ritmos de recuperación.</p></article>
+        <article><span>02</span><p>Mejoras acumulativas en textura, hidratación y luminosidad.</p></article>
+        <article><span>03</span><p>Seguimiento para ajustar intensidad y frecuencia.</p></article>
+      </div>
+    </section>
+    <section id="contacto" class="cta-shell">
+      <p class="eyebrow">Contacto</p>
+      <h2>Reserva una valoración si buscas estética con más calma, equilibrio y criterio de piel.</h2>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>Templa Medical · Tu Oasis Estético</p>
+    <p>Madrid · Equilibrio en la piel y resultados reales</p>
+  </footer>
 </body>
 </html>
